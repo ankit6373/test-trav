@@ -376,7 +376,7 @@ auth_route.post('/password_reset_link',async(req,res) => {
 	const user = await User.findOne({email: uEmail});
 	
 	if(user){
-		const resetSecret = randomString.generate();
+		const resetSecret = randomstring.generate();
 	
 	    // Insert that Email Secret Token in that User model
 		
