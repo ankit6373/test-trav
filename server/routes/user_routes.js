@@ -12,7 +12,7 @@ var {ObjectID} = require('mongodb');
 var user_route  = express.Router();
 var app = express();
 const Joi = require('joi');
-const randomString = require('randomString');
+const randomstring = require('randomstring');
 
 const sharp   = require('sharp');
 const multer  = require('multer');
